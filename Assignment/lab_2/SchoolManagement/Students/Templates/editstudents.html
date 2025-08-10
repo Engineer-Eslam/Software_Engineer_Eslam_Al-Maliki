@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+</head>
+<body>
+    <h2>Edit Student</h2>
+    <!--if-->
+    <h3>if</h3>
+    {% if total > 250%}
+    <p>Ex</p>
+    {% endif %}
+    <h3>if and else</h3>
+    <!-- if else -->
+    {% if total > 250%}
+    <p>Ex</p>
+    {% else %}
+    <p>Goood</p>
+    {% endif %}
+    <h3>if, elif and else</h3>
+    <!-- if else -->
+    {% if total > 250%}
+    <p>Ex</p>
+    {% elif total < 250 and total > 200 %}
+    <p> Very Good</p>
+    {% else %}
+    <p>Goood</p>
+    {% endif %}
+
+    <h3>For Loop</h3>
+    <ul>
+    {% for sub, mark in marks.items %}
+        <li>{{sub}} : {{mark}}</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back</a>
+</body>
+</html>
